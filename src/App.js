@@ -47,7 +47,7 @@ function App() {
 
   const handleColor = (color) => {
     setBrushColor(color);
-    canvas.current.freeDrawingBrush.color = brushColor;
+    canvas.current.freeDrawingBrush.color = color;
   };
 
   return (
