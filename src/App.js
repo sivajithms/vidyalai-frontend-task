@@ -3,7 +3,6 @@ import { fabric } from "fabric";
 import "./App.css";
 import { faEraser, faPen } from "@fortawesome/free-solid-svg-icons"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
-import PenAndEraser from "./componets/PenAndEraser";
 
 function App() {
   const [brushSize, setBrushSize] = useState(3);
@@ -48,7 +47,7 @@ function App() {
 
   const handleColor = (color) => {
     setBrushColor(color);
-    canvas.current.freeDrawingBrush.color = color;
+    canvas.current.freeDrawingBrush.color = brushColor;
   };
 
   return (
